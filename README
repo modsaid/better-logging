@@ -7,6 +7,20 @@ The idea is to add a timestamp and the logging level to each logged message, for
 better tracking and trouble shooting issue on rails application. The time dimension 
 does matter a lot
 
+Sample Output
+-------------
+Processing SessionController#new (for 127.0.0.1 at 2010-02-14 14:45:47.759491) [GET]
+2010-02-14 14:45:47 [INFO]   Session ID: db530add21a108be121380734adda65d
+2010-02-14 14:45:47 [INFO]   Parameters: {"return_to"=>"/user_menu/preferences", "action"=>"new", "controller"=>"session"}
+2010-02-14 14:45:47 [INFO] Rendering  within layouts/application
+2010-02-14 14:45:47 [INFO] Rendering session/new
+2010-02-14 14:45:47 [DEBUG]   Zone Load (0.000149)   SELECT * FROM zones WHERE (zones.`name` = 'Side Wide Skyscraper Zone') LIMIT 1
+2010-02-14 14:45:47 [DEBUG]   Zone Load (0.000124)   SELECT * FROM zones WHERE (zones.`id` = 16) 
+2010-02-14 14:45:47 [DEBUG]   Size Load (0.000265)   SELECT * FROM sizes WHERE (sizes.`id` = 4) 
+2010-02-14 14:45:47 [INFO] Completed in 0.03830 (26 reqs/sec) | Rendering: 0.03656 (95%) | DB: 0.00049 (1%) | 200 OK [http://localhost/login?return_to=%2Fuser_menu%2Fpreferences]
+
+
+
 --------------------------------------------------------------------------------
 Installation
 ------------
