@@ -1,0 +1,31 @@
+Overview
+--------
+
+Better logging is a small override for the formate_message of rails Ruby's Logger
+class.
+The idea is to add a timestamp and the logging level to each logged message, for
+better tracking and trouble shooting issue on rails application. The time dimension 
+does matter a lot
+
+--------------------------------------------------------------------------------
+Installation
+------------
+
+  gem install better-logging
+
+--------------------------------------------------------------------------------
+Usage
+-----
+
+In your envitonment.rb add
+
+  require 'better-logging'
+
+
+--------------------------------------------------------------------------------
+author
+------
+
+Mahmoud Said (mahmoud@modsaid.com)
+RubyOnRails Developer
+
